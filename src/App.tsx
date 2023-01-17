@@ -17,7 +17,6 @@ function App() {
           setPokemonResults(res.results)
         })
         //lets filter the array
-        //starts with may be better for 
         return new Promise((resolve, reject) => {
           resolve(
             pokemonResults.filter(p => p.name.toLowerCase().startsWith(query.toLowerCase())
